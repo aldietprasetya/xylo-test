@@ -1,0 +1,31 @@
+%clearfix{
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+%transition{
+  transition:all 0.2s ease-in-out;
+}
+%slower-transition{
+  transition:all 0.4s ease-in-out;
+}
+%shadow{
+  box-shadow: 0px 9px 18px 0px rgba(159, 159, 159, 0.36);
+}
+
+%row-spacing{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+%row-spacing-header{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+@media only screen and (max-width: $max-width-mobile) {
+  %site-container{
+    width:100%;
+  }
+}

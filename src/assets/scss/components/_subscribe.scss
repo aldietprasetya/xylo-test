@@ -1,0 +1,93 @@
+.subscribe {
+  background: $mainBlack2;
+  border-top: 1px solid #1c1c1c;
+  padding: 0 50px !important;
+  &-wrapper {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 7px;
+    padding-right: 7px;
+    &__cards {
+      margin-bottom: 80px;
+    }
+    &__subscribe {
+      text-align: center;
+      width: 560px;
+      max-width: 100%;
+      margin: 0 auto;
+      &-title {
+        @include font(24px, 24px, 800, $white)
+        font-family: 'Italian',sans-serif;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+      &-text {
+        @include font(15px, 27px, 400, $white)
+        font-family: 'SöhneMono Buch',sans-serif;
+        letter-spacing: .15px;
+        margin-bottom: 30px;
+      }
+      &-input {
+        width: 80% !important;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        input {
+          @include font(14px, 1.42857143, 400, $white)
+          font-family: 'SöhneMono Buch',sans-serif;
+          letter-spacing: .24px;
+          background: transparent;
+          height: 56px;
+          padding: 6px 20px 10px;
+          border: 1.5px solid #fff;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          &:focus {
+            border: 1.5px solid #fff;
+            background: transparent;
+            box-shadow: none;
+            color: $white;
+            outline: 0 none;
+          }
+          &::placeholder {
+            color: $white;
+          }
+        }
+        button {
+          @extend %transition;
+          @include font(14px, 22px, 500, $darkGrey6)
+          font-family: 'SöhneMono Kräftig',sans-serif;
+          letter-spacing: .24px;
+          height: 56px;
+          border: 1.5px solid #fff;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          background: $white;
+          padding: 6px 20px 10px;
+          &:hover {
+            border: 1.5px solid #fff;
+            color: $darkGrey6;
+            background: $white;
+            opacity: .72;
+          }
+        }
+      }
+      &-policy {
+        @include font(12px, 18px, 400, $grey3)
+        width: 80%;
+        font-family: 'SöhneMono Buch',sans-serif;
+        letter-spacing: .32px;
+        margin: 0 auto;
+        a {
+          @extend %transition;
+          font-family: 'SöhneMono Buch',sans-serif;
+          color: $grey3;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

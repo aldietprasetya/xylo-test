@@ -1,0 +1,17 @@
+.billboard {
+  background: $mainBlack2;
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+  &-wrapper {
+    @extend %row-spacing;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    &__column {
+      justify-content: center;
+      display: flex;
+    }
+    &__img {
+      width: 80%;
+    }
+  }
+}

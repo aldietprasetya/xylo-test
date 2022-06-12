@@ -1,0 +1,120 @@
+.header {
+  position: relative;
+  z-index: 1;
+  backdrop-filter: saturate(100%) blur(16px);
+  background-color: $darkGrey1;
+  &_fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  &__toogle {
+    display: none;
+  }
+  &__top-bar {
+    @extend %row-spacing-header;
+    width: 100%;
+    top: 0;
+    background-color: hsla(0,0%,9%,.92);
+    backdrop-filter: saturate(100%) blur(16px);
+    align-content: center;
+    border-bottom: 1px solid #1c1c1c;
+  }
+  &__bottom-bar {
+    @extend %row-spacing-header;
+    justify-content: space-between !important;
+    padding-top: 20px;
+    border-bottom: 1px solid #1c1c1c;
+  }
+  &__button {
+    @extend %transition;
+    font-family: 'SöhneMono Kräftig',sans-serif;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    &-icon {
+      width: 30px;
+      border-radius: 6px !important;
+    }
+  }
+  &__img {
+    @extend %transition;
+    display: block;
+    background: $white;
+    -webkit-mask: url('~@/assets/images/logo-icon/logo.svg?inline') round;
+    mask: url('~@/assets/images/logo-icon/logo.svg?inline') round;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 162px;
+    height: 20px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+    &:hover {
+      background: $orange;
+    }
+  }
+  &__menus {
+    @extend %transition;
+    @include font(14px, 18px, 500, $white)
+    font-family: 'SöhneMono Kräftig',sans-serif;
+    text-decoration: none;
+    display: block;
+    width: 20%;
+    text-align: center;
+    letter-spacing: .28px;
+    padding: 19px 0;
+    &_dropdown {
+      padding: 0;
+    }
+    &:hover {
+      color: $orange;
+    }
+    li {
+      list-style: none;
+      span {
+        @extend %transition;
+        @include font(14px, 18px, 500, $white)
+        font-family: 'SöhneMono Kräftig',sans-serif;
+      }
+      &:hover span {
+        color: $orange;
+      }
+      a {
+        font-family: 'SöhneMono Kräftig',sans-serif;
+        padding: 19px 0;
+        &::after {
+          display: none;
+        }
+      }
+      ul {
+        top: 50px;
+        background-color: #171717;
+        border: 1px solid #262626;
+        border-radius: 8px;
+        width: 200px;
+        padding: 0;
+        li {
+          text-align: center;
+          border-bottom: 1px solid #262626;
+          a {
+            @include font(14px, 18px, 500, $white)
+            padding-top: 12px;
+            padding-bottom: 12px;
+            color: $white;
+            &:hover,
+            &:active {
+              background: none;
+            }
+          }
+          &:hover a {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  
+}

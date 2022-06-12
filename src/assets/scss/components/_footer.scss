@@ -1,0 +1,90 @@
+.footer {
+  background: $darkGrey1;
+  &-wrapper {
+    @extend %row-spacing;
+    border-top : 1px solid $darkGrey3;
+    border-bottom: 1px solid $darkGrey3;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    &__desc {
+      position: relative;
+      @include font(14px, 26px, 400, $white)
+      font-family: 'SöhneMono Buch',sans-serif;
+      color: $white;
+      width: 350px;
+      letter-spacing: .14px;
+      margin-bottom: 0;
+    }
+    &__link {
+      @extend %transition;
+      position: relative;
+      @include font(14px, 26px, 400, $grey2)
+      font-family: 'SöhneMono Buch',sans-serif;
+      letter-spacing: .14px;
+      text-decoration: none;
+      &:hover {
+        color: $orange;
+      }
+    }
+    &__img {
+      @extend %transition;
+      display: block;
+      background: $white;
+      -webkit-mask: url('~@/assets/images/logo-icon/logo.svg?inline') round;
+      mask: url('~@/assets/images/logo-icon/logo.svg?inline') round;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      width: 192px;
+      height: 32px;
+      margin-top: 58px;
+      &:hover {
+        background: $orange;
+      }
+    }
+    &__link {
+      p {
+        @include font(14px, 22px, 400, $white)
+        font-family: 'SöhneMono Kräftig',sans-serif;
+        margin-bottom: 28px;
+      }
+      a {
+        @extend %transition;
+        @include font(14px, 20px, 400, $grey2)
+        font-family: 'SöhneMono Buch',sans-serif;
+        letter-spacing: .14px;
+        display: block;
+        text-decoration: none;
+        margin-bottom: 28px;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  &-base {
+    @extend %row-spacing;
+    @include font(12px, 18px, 400, $grey1)
+    font-family: 'Söhne Buch',sans-serif;
+    align-content: center;
+    position: relative;
+    height: 56px;
+    &__copyright {
+      letter-spacing: .43px;
+    }
+    &__menus {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        @extend %transition;
+        color: $grey1;
+        letter-spacing: .43px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: 30px;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

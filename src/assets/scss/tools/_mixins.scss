@@ -1,0 +1,25 @@
+@mixin font($fontsize, $lineheight, $fontweight: 400,$color:$mainBlack1){
+    font-size: $fontsize;
+    line-height: $lineheight;
+    font-weight: $fontweight;
+    color: $color;
+}
+
+@mixin background($size:cover, $position:center top){
+  background-size: $size;
+  background-position: $position;
+  background-repeat:no-repeat;
+}
+
+@mixin position($pos, $top:auto,$right:auto,$bottom:auto,$left:auto){
+  position: $pos;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin floatleft($width){
+  float: left;
+  width: $width;
+}

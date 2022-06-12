@@ -1,0 +1,82 @@
+.banner {
+  background: $darkGrey6;
+  overflow: hidden;
+  &-wrapper {
+    @extend %row-spacing;
+    &__left-content {
+      position: relative;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      h1 {
+        @include font(32px, 38px, 700, $white)
+        font-family: 'Italian',sans-serif;
+        letter-spacing: .64px;
+        margin-bottom: 16px;
+      }
+      p {
+        @include font(20px, 30px, 400, $white)
+        font-family: 'Italian',sans-serif;
+        letter-spacing: .24px;
+        margin-bottom: 24px;
+      }
+    }
+    &__img {
+      position: relative;
+      top: -42px;
+      display: inline-flex;
+      width: 100%;
+      will-change: transform;
+    }
+    &__card-container {
+      width: 388px;
+      position: relative;
+      left: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__cards {
+      margin-bottom: 8px;
+      &-button {
+        width: 100%;
+        &_sec {
+          font-family: 'SöhneMono Kräftig',sans-serif;
+          width: max-content;
+        }
+      }
+      &-section {
+        margin-bottom: 0;
+        align-items: center;
+        .card-body {
+          padding: 0;
+          span {
+            &:first-child {
+              @include font(10px, 14px, 800, $orange)
+              font-family: 'Italian',sans-serif;
+              text-transform: uppercase;
+              letter-spacing: 1.6px;
+            }
+            &:last-child {
+              font-family: 'Söhne Buch',sans-serif;
+              @include font(14px, 20px, 400, $white)
+              letter-spacing: .36px;
+              margin-top: -4px;
+            }
+          }
+        }
+        p {
+          display: flex;
+          flex-direction: column ;
+          text-align: left;
+          justify-content: center;
+        }
+      }
+      img {
+        width: 100px;
+        height: 80px;
+        margin-right: 16px;
+        border-radius: 6px;
+        object-fit: cover;
+      }
+    }
+  }
+}
