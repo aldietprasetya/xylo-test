@@ -1,5 +1,8 @@
 <template>
   <b-container class="banner">
+    <b-col sm="6" class="banner-wrapper__right-content banner-wrapper__right-content_mobile">
+      <img v-rellax="{speed: -.8}" class="banner-wrapper__img" src="@/assets/images/section1-img/card-portrait-tiny.png">
+    </b-col>
     <b-row class="banner-wrapper">
       <b-col sm="6" class="banner-wrapper__left-content">
         <h1>Timeless insights for business and life.</h1>
@@ -29,7 +32,7 @@
           </b-row>
         </b-row>
       </b-col>
-      <b-col sm="6" class="banner-wrapper__right-content">
+      <b-col sm="6" class="banner-wrapper__right-content banner-wrapper__right-content_desk">
         <img v-rellax="{speed: -.8}" class="banner-wrapper__img" src="@/assets/images/section1-img/card-portrait-tiny.png">
       </b-col>
     </b-row>

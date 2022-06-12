@@ -3,6 +3,19 @@
   overflow: hidden;
   &-wrapper {
     @extend %row-spacing;
+    &__right-content {
+      &_mobile {
+        display: none;
+      }
+      @media only screen and (max-width: $max-width-mobile) {
+        &_mobile {
+          display: block;
+        }
+        &_desk {
+          display: none;
+        }
+      }
+    }
     &__left-content {
       position: relative;
       padding-top: 5%;

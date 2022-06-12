@@ -1,5 +1,5 @@
 <template>
-  <b-container class="header">
+  <b-container class="header header-desk">
     <b-navbar class="header__bottom-bar">
       <b-link class="header__menus" href="https://www.danielscrivner.com/outliers/episodes-and-guests">Podcast</b-link>
       <b-link class="header__menus" href="https://www.danielscrivner.com/newsletter">Newsletter</b-link>

@@ -117,4 +117,30 @@
     }
   }
 
+  @media only screen and (max-width: $max-width-mobile) {
+    &__toogle {
+      display: block;
+    }
+    &-desk {
+      display: none;
+    }
+    &__img {
+      top: 23px;
+    }
+    button svg {
+      color: white;
+    }
+    li {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      a {
+        font-family: 'SöhneMono Kräftig',sans-serif;
+        @include font(14px, 18px, 500, $white)
+        padding-top: 12px;
+        color: white !important;
+      }
+    }
+  }
+
 }

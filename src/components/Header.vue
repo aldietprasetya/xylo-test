@@ -2,9 +2,11 @@
   <b-container class="header header_fixed">
     <b-navbar class="header__top-bar" toggleable>
 
-      <b-button class="header__button header__button-icon" v-b-modal.modal-1 href="#">
+      <b-button class="header__button header__button_1 header__button-icon" v-b-modal.modal-1 href="#">
         <b-icon icon="search"></b-icon>
       </b-button>
+
+      <a class="header__img" href="#"></a>
 
       <b-navbar-toggle class="header__toogle" target="navbar-toggle-collapse">
         <template #default="{ expanded }">
@@ -12,9 +14,10 @@
           <b-icon v-else icon="chevron-bar-down"></b-icon>
         </template>
       </b-navbar-toggle>
-
-      <a class="header__img" href="#"></a>
-      <b-button class="header__button" href="#">Subscribe</b-button>
+      <b-button class="header__button header__button_subscribe" href="#">Subscribe</b-button>
+      <b-button class="header__button header__button_t header__button-icon" v-b-modal.modal-1 href="#">
+        <b-icon icon="search"></b-icon>
+      </b-button>
 
       <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav class="ml-auto">

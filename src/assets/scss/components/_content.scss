@@ -202,6 +202,14 @@
           mask-size: cover;
         }
       }
+      @media only screen and (max-width: $max-width-mobile) {
+        width: 100% !important;
+        margin-bottom: 24px;
+        &-blocks {
+          width: 100% !important;
+          margin-bottom: 16px;
+        }
+      }
     }
   }
 }
